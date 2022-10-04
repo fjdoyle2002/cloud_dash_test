@@ -268,4 +268,4 @@ def update_graph(test_choice, num_ant, ant_list, P100, P41, OspC, DbpA, BmpA,
 
 
 if __name__ == '__main__':
-    dash_app.run_server(debug=True)
+    app.run(debug=True, host='0.0.0.0', port='80')
