@@ -183,8 +183,8 @@ def update_graph(test_choice, num_ant, ant_list, P100, P41, OspC, DbpA, BmpA,
                    'P66': P66, 'VlsE': VlsE, 'ErpL': ErpL, 'OspD': OspD}
 
     # read csv's into df
-    all_cdc_df = pd.read_csv('cdc_lyme_data.csv', skiprows=2)
-    lyme_df = pd.read_csv('complete_lyme_data.csv')
+    all_cdc_df = pd.read_csv('./cdc_lyme_data.csv', skiprows=2)
+    lyme_df = pd.read_csv('./complete_lyme_data.csv')
 
     # remove the 0 to match ID's
     lyme_df.ID = lyme_df.ID.str.replace('#0', '#')
